@@ -5,6 +5,7 @@ import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
+import {Image} from "@nextui-org/react";
 
 export default function Home() {
 	return (
@@ -46,6 +47,13 @@ export default function Home() {
 					</span>
 				</Snippet>
 			</div>
+
+			<Image
+				isZoomed
+				width={240}
+				alt="NextUI Fruit Image with Zoom"
+				src="https://nextui-docs-v2.vercel.app/images/fruit-1.jpeg"
+			/>
 		</section>
 	);
 }
